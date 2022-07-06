@@ -1,0 +1,19 @@
+// form nav 
+
+.header__menu {
+  display: flex;
+}
+.header__menu__item {
+  width: 12rem;
+  padding: 1.5rem;
+  font-weight: bold;
+  border-radius: 10rem;
+  text-align: center;
+  list-style-type: none;
+  font-size: 1.8rem;
+  color: white;
+}
+.header__menu__item:hover {
+  background-color: white;
+  color: black;
+}

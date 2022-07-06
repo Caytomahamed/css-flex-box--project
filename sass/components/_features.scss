@@ -1,0 +1,24 @@
+// from features 
+
+.features {
+  height: 50rem;
+  display: flex;
+}
+
+.features__item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__item--image--1 {
+  background: url("../images/desktop/image-transform.jpg");
+}
+.features__item--image--2 {
+  background: url("../images/desktop/image-stand-out.jpg");
+}
+.features__item__content {
+  width: 80%;
+  padding: 0px 5rem;
+}

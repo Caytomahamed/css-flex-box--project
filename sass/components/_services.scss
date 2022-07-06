@@ -1,0 +1,25 @@
+/* services */
+.services {
+  display: flex;
+  height: 50rem;
+}
+.services__item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.services__item--1 {
+  background: url("../images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+}
+
+.services__item--2 {
+  background: url("../images/desktop/image-photography.jpg");
+  background-size: cover;
+}
+.services__content {
+  margin-bottom: 2.5rem;
+  width: 60%;
+  text-align: center;
+}

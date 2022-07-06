@@ -1,1 +1,16 @@
-//  main css compile sass => css 
+// bases
+@import "base/utility";
+@import "base/reset";
+@import "base/typography";
+
+
+// layout
+@import "layout/header";
+@import "layout/navigation";
+
+// pages
+@import "pages/home";
+
+// componetns
+@import "components/features";
+@import "components/services";

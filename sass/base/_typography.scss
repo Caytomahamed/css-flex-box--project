@@ -1,0 +1,30 @@
+// from typography  
+
+html,body {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  line-height: 1.2;
+  font-family: $default-font;
+} 
+ 
+.primary__header {
+  font-size: 6rem;
+  color: white;
+}
+.secondary__header {
+  font-size: 5rem;
+  color: black;
+  opacity: 0.8;
+}
+.thrid__header {
+  font-size: 3rem;
+}
+.four__header {
+  font-size: 2.2rem;
+  opacity: 0.8;
+}
+.para {
+  font-size: 1.8rem;
+}
