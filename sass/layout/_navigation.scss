@@ -11,9 +11,9 @@
   text-align: center;
   list-style-type: none;
   font-size: 1.8rem;
-  color: white;
+  color: $primary-color;
 }
 .header__menu__item:hover {
-  background-color: white;
-  color: black;
+  background-color: $primary-color;
+  color: $secondary-color;
 }

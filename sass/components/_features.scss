@@ -6,10 +6,8 @@
 }
 
 .features__item {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: $width-container-md;
+  @include absCenter;
 }
 
 .features__item--image--1 {

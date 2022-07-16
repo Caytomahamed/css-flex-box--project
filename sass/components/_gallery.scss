@@ -1,0 +1,13 @@
+.gallery {
+  height: 35rem;
+  display: flex;
+  overflow: hidden;
+
+  &__item {
+    width: calc(100% / 4);
+    height: 100%;
+  }
+  &__img {
+    width: 100%;
+  }
+}

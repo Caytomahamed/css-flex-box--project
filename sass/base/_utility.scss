@@ -10,8 +10,19 @@
   margin-bottom: 1rem;
 }
 .color__gray {
-  color: hsl(213, 9%, 39%);
+  color: $primary-color-dark;
 }
 .color__text {
-  color: hsl(167, 40%, 24%);
+  color: $dark-green;
+}
+
+.font-size-2x {
+  font-size: 2.4rem;
+}
+.font-size-3x {
+  font-size: 3rem;
+}
+
+.text-center {
+  text-align: center;
 }

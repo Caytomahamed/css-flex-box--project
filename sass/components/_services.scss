@@ -4,7 +4,7 @@
   height: 50rem;
 }
 .services__item {
-  width: 50%;
+  width: $width-container-md;
   display: flex;
   justify-content: center;
   align-items: flex-end;
