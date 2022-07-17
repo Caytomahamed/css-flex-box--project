@@ -3,6 +3,7 @@ $primary-color:#fff;
 $primary-color-dark:hsl(213, 9%, 39%);
 $secondary-color:#000;
 $dark-green:hsl(167, 40%, 24%);
+$yellow :hsl(51, 100%, 49%);
 
 // FONTS
 $default-font:"Lato", sans-serif;
@@ -12,3 +13,8 @@ $width-container-md:50%;
 
 // opacity
 $opacity-8:.8; 
+
+// BOX SHADOW 
+
+$shadow-md:20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+$shadow-sm: 5px 5px 5rem #2f2e2e75;

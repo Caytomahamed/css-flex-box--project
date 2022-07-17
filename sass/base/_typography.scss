@@ -1,14 +1,27 @@
-// from typography  
+// from typography
 
-html,body {
-    font-size: 62.5%; /* 1rem = 10px */
+html,
+body {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  @include respond(tab-land) {
+    //width < 1200
+    font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(tab-port) {
+    //width < 900
+    font-size: 50%; //1rem = 8px, 8/18 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16 = 75%
+  }
 }
 
 body {
   line-height: 1.2;
   font-family: $default-font;
-} 
- 
+}
+
 .primary__header {
   font-size: 6rem;
   color: $primary-color;
@@ -30,4 +43,10 @@ body {
 }
 .para2 {
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 50%;
+  }
 }

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -20,7 +19,7 @@
       rel="stylesheet"
     />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -28,6 +27,14 @@
         <div class="header__logo">
           <img src="./images/logo.svg" alt="logo" />
         </div>
+
+        <input type="checkbox" name="check" id="check"  class="header__check"/>
+        
+        <label for="check">
+          <div class="header__hamburger">
+            <img src="./images/icon-hamburger.svg" alt="menu icon" id="check"/>
+          </div>
+        </label>
 
         <nav class="header__menu">
           <li class="header__menu__item">About</li>
@@ -55,7 +62,7 @@
           <h3 class="four__header">Learn more</h3>
         </div>
       </div>
-      <div class="features__item features__item--image--1 ">&nap;</div>
+      <div class="features__item features__item--image--1">&nap;</div>
     </section>
     <section class="features">
       <div class="features__item features__item--image--2">&nap;</div>
@@ -71,40 +78,150 @@
         </div>
       </div>
     </section>
-    
-    <section class="services">
-       <div class="services__item services__item--1">
-         <div class="services__content">
-          <h3 class="thrid__header color__text margin_bt-10">Graphic design</h3>
-          <p class="para color__text ">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-         </div>
-       </div>
-       <div class="services__item services__item--2">
-         <div class="services__content">
-          <h3 class="thrid__header color__text margin_bt-10">Graphic design</h3>
-          <p class="para color__text ">hotography Increase your credibility by getting the most stunning, high-quality photos that improve your business image..</p>
-         </div>
-       </div>
-    </section>
-    Stand out to the right audience Using a collaborative formula of designers,
-    researchers, photographers, videographers, and copywriters, we’ll build and
-    extend your brand in digital places. Learn more Graphic design Great design
-    makes you memorable. We deliver artwork that underscores your brand message
-    and captures potential clients’ attention. Photography Increase your
-    credibility by getting the most stunning, high-quality photos that improve
-    your business image. Client testimonials We put our trust in Sunnyside and
-    they delivered, making sure our needs were met and deadlines were always
-    hit. Emily R. Marketing Director Sunnyside’s enthusiasm coupled with their
-    keen interest in our brand’s success made it a satisfying and enjoyable
-    experience. Thomas S. Chief Operating Officer Incredible end result! Our
-    sales increased over 400% when we worked with Sunnyside. Highly recommended!
-    Jennie F. Business Owner About Services Projects Contact
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <section class="services">
+      <div class="services__item services__item--1">
+        <div class="services__content">
+          <h3 class="thrid__header color__text margin_bt-10">Graphic design</h3>
+          <p class="para color__text">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </div>
+      <div class="services__item services__item--2">
+        <div class="services__content">
+          <h3 class="thrid__header color__text margin_bt-10">Graphic design</h3>
+          <p class="para color__text">
+            hotography Increase your credibility by getting the most stunning,
+            high-quality photos that improve your business image..
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- review  -->
+    <section class="review">
+      <div class="review__box">
+        <h2 class="review__box__header text-center">Client testimonials</h2>
+
+        <div class="reviewer__con">
+          <div class="reviewer">
+            <div class="reviewer__review__image">
+              <img
+                src="./images/image-emily.jpg"
+                alt="reviewer"
+                class="reviewer__review__image__reriew__img"
+              />
+            </div>
+
+            <div class="reviewer__content">
+              <p class="para2">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+            </div>
+
+            <div class="reviewer__name text-center">
+              <h3>Emily R.</h3>
+              <p>Marketing Director Sunnyside’s</p>
+            </div>
+          </div>
+
+          <div class="reviewer">
+            <div class="reviewer__review__image">
+              <img
+                src="./images/image-jennie.jpg"
+                alt="reviewer"
+                class="reviewer__review__image__reriew__img"
+              />
+            </div>
+
+            <div class="reviewer__content">
+              <p class="para2">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+            </div>
+
+            <div class="reviewer__name text-center">
+              <h3>Enthusiasm</h3>
+              <p>satisfying and enjoyable experience.</p>
+            </div>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer__review__image">
+              <img
+                src="./images/image-thomas.jpg"
+                alt="reviewer"
+                class="reviewer__review__image__reriew__img"
+              />
+            </div>
+
+            <div class="reviewer__content">
+              <p class="para2">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+            </div>
+
+            <div class="reviewer__name text-center">
+              <h3>Thomas S.</h3>
+              <p>Business Owner About Services Projects Contact</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__item">
+        <img
+          src="./images/desktop/image-gallery-milkbottles.jpg"
+          alt="image"
+          class="gallery__img"
+        />
+      </div>
+      <div class="gallery__item">
+        <img
+          src="./images/desktop/image-gallery-orange.jpg"
+          alt="image"
+          class="gallery__img"
+        />
+      </div>
+      <div class="gallery__item">
+        <img
+          src="./images/desktop/image-gallery-cone.jpg"
+          alt="image"
+          class="gallery__img"
+        />
+      </div>
+      <div class="gallery__item">
+        <img
+          src="./images/desktop/image-gallery-sugarcubes.jpg"
+          alt="image"
+          class="gallery__img"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="header__logo">
+          <img
+            src="./images/logo.svg"
+            alt="Frontend Mentor logo"
+            class="header__logo__img"
+          />
+        </div>
+
+        <nav class="header__menu">
+          <li class="header__menu__item">About</li>
+          <li class="header__menu__item">Services</li>
+          <li class="header__menu__item">Projects</li>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

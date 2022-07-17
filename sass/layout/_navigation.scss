@@ -1,8 +1,23 @@
-// form nav 
+// form nav
 
 .header__menu {
   display: flex;
+
+  @include respond(phone) {
+    opacity: 0;
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    background: $primary-color;
+    width: 30rem;
+    box-shadow: $shadow-sm;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 31rem;
+    margin-left: 15rem;
+  }
 }
+
 .header__menu__item {
   width: 12rem;
   padding: 1.5rem;
@@ -12,8 +27,25 @@
   list-style-type: none;
   font-size: 1.8rem;
   color: $primary-color;
+
+  @include respond(phone) {
+    flex-direction: column;
+    color: $primary-color-dark;
+  }
 }
 .header__menu__item:hover {
+  display: inline-block;
   background-color: $primary-color;
   color: $secondary-color;
+  @include respond(phone) {
+    background-color: $yellow;
+  }
+}
+
+.header__check {
+  display: none;
+}
+
+.header__check:checked ~ .header__menu {
+  opacity: 1;
 }

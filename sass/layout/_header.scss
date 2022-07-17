@@ -6,6 +6,7 @@
   background-position: center;
   
   padding: 2rem;
+  position: relative;
 
   background-size: cover;
   background-position: center;
@@ -16,4 +17,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__hamburger {
+  display: none;
+  
+  @include respond(phone){
+    display: block;
+    right: 2rem;
+  }
 }
