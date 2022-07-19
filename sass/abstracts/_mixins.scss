@@ -1,47 +1,54 @@
-
 @mixin absCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+// PHONE IMAGES
 
+@mixin imgresponsive($image) {
+  width: $width-container-md;
+  background-image: $image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  @include respond(phone) {
+    width: 100%;
+  }
+}
 // MEDIA QUERY MANAGER
 
-// 0-600px =  phone 
+// 0-600px =  phone
 // 600-900px tablet portrait
 // 900-1200px tablet landscape
 // 1200-1800px desktop
 
 // $breakpoint
-// phone 
+// phone
 // tablet portrait
 // tablet landscape
 // desktop
 
-
 @mixin respond($breakpoint) {
-    @if $breakpoint == "phone" {
-        @media screen and (max-width: 37.5em) {
-            @content;
-        }
-    }
-    @if $breakpoint == "tablet-port" {
-        @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
-            @content;
-        }
-    }
-    @if $breakpoint == "tablet-land" {
-        @media screen and (min-width: 56.25em) and (max-width: 75em) {
-            @content;
-        }
-    }
-    @if $breakpoint == "desktop" {
-        @media screen and (min-width: 75em) {
-            @content;
-        }
-    }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800px
+  }
 }
-
-
-

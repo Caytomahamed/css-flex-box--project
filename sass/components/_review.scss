@@ -17,6 +17,11 @@
 .reviewer__con {
   display: flex;
   margin-top: 6rem;
+  
+  @include respond(tab-port) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .reviewer {
@@ -29,6 +34,13 @@
   justify-content: space-evenly;
   transition: all 0.4s ease-in-out;
   border-radius: 2rem;
+  
+  @include respond(tab-port) {
+    width: 45rem;
+    padding: 0 5rem;
+    margin-top: 2rem;  
+    margin-bottom: 5rem;
+  }
 
   &:hover {
     box-shadow: $shadow-md;

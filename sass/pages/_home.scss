@@ -1,11 +1,21 @@
-// from home 
+// from home
 
 .header__content {
   width: 50%;
   margin: 0 auto;
   text-align: center;
   margin-top: 4rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin-top: 12rem;
+  }
 }
 .arrow {
-  transform: translateY(50px); 
+  transform: translateY(50px);
+
+  @include respond(phone) {
+    height: 13rem;
+    transform: translateY(30px);
+  }
 }
